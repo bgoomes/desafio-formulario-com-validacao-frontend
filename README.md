@@ -1,4 +1,3 @@
-
 # Terceiro Desafio: Formulário de Cadastro de Membros - Processo Seletivo Frontend Fusion - [vaga voluntária]
 
 > OBS : Você receberá um e-mail com a data de início dos desafios, mas eles já estão disponíveis para acesso imediato. 
