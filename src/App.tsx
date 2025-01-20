@@ -24,7 +24,11 @@ export function App() {
 
   function createUser(data: userProps){
     console.log(data)
-    toast.success('Cadastro feito com sucesso!')
+    localStorage.setItem("@user", JSON.stringify([data]))
+    
+    toast.success('Cadastro realizado com sucesso!', {
+      position: 'top-right',
+    })
   }
   return (
     <div className='flex items-center justify-center'>
@@ -77,7 +81,7 @@ export function App() {
             <input className='w-full h-[50px] border rounded-xl p-4' id='linkdin' placeholder="Digite seu linkdin" {...register('linkdIn')}/>
             {errors.linkdIn && <span className= "text-red-400">{errors.linkdIn.message}</span>}
           </div>
-
+           <Toaster />
             <button type="submit" className='w-full h-14 border rounded-full shadow mt-10 bg-green-500 text-white font-bold hover:bg-green-400'>Enviar</button>
       </form>
     </div>
